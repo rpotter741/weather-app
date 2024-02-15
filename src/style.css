@@ -1,0 +1,569 @@
+@font-face {
+    font-family: 'fantasy';
+    src: url('../Luminari-Regular.woff');
+}
+
+* {
+    font-family: 'fantasy';
+    font-size: 16px;
+    
+}
+
+.body {
+    position: relative;
+}
+
+textarea {
+    width: 97.75%;
+    height: 89.5%;
+    margin: 1rem;
+    -webkit-box-sizing: border-box; 
+    -moz-box-sizing: border-box;    
+    box-sizing: border-box;         
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.flexRow {
+    display: flex;
+    align-items: center;
+}
+
+.flexCol {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.text-center {
+    text-align: center;
+    width: 100%;
+}
+
+
+.gap {
+    gap: .33rem;
+}
+
+.center {
+    justify-content: center;
+    align-items: center;
+}
+
+.box1 {
+    margin: 0 1rem 1rem 1rem;
+    padding: .5rem;
+    height: 90px;
+    background: aliceblue;
+    border-radius: .5rem;
+    box-shadow: 0 0 1rem black;
+}
+
+.box1a {
+    margin: 0 1rem 1rem 1rem;
+    padding: .5rem;
+    height: 120px;
+    background: aliceblue;
+    border-radius: .5rem;
+    box-shadow: 0 0 1rem black;
+    justify-content: center;
+}
+
+.box2 {
+    margin: 0 1rem 1rem 1rem;
+    background: aliceblue;
+    height: 500px;
+    border-radius: .5rem;
+    box-shadow: 0 0 1rem black;
+}
+
+.box3 {
+    margin: 0 1rem 1rem 1rem;
+    background: aliceblue;
+    border-radius: .5rem;
+    box-shadow: 0 0 1rem black;
+}
+
+.box4 {
+    width: 11.111%;
+}
+
+#contentBox {
+    grid-column: 3/4;
+    grid-row: 1/-1;
+    display: flex;
+    flex-direction: column;
+    margin: 0 1rem 1rem 1rem;
+    background: aliceblue;
+    border-radius: .5rem;
+    box-shadow: 0 0 1rem black;
+    justify-content: start;
+}
+
+
+#currentHealth {
+    width: 15%;
+    background: none;
+    border: none;
+}
+
+button {
+    font-family: 'fantasy';
+}
+
+#settlementName {
+    font-size: 24px;
+    border: none;
+    background: none;
+    text-align: center;
+    width: 85%
+}
+
+#settlementName::placeholder {
+    background: rgba(25,25,200,.3)
+}
+
+.valBall {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    background: rgba(200,200,230,1);
+    border: 1px solid black;
+    height: 35px;
+    width: 35px;
+}
+
+.header {
+    height: 10%;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(200,200,230,.5);
+    padding: .5rem;
+    border-radius: .5rem;
+}
+
+.subHeader {
+    height: 5%;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(200,200,230,.5);
+    padding: .5rem;
+}
+
+/*//////////////////Tax Styling///////////////////////////*/
+
+.taxRow {
+    display: flex;
+    height: 10%;
+}
+
+.taxLabel, .taxValue {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.taxLabel {
+    justify-content: start;
+    padding-left: 1rem;
+    box-sizing: border-box;
+}
+
+.taxChngBtn {
+    border: none;
+    background: none;
+}
+
+/*//////////////////////Shop Styling////////////////////////////////////*/
+
+#buySell {
+    display: flex;
+    height: 10%;
+}
+
+#buyMode, #sellMode {
+    width: 50%;
+    border: none;
+}
+
+#buyMode {
+    border-right: 1px solid black;
+}
+
+#sellMode {
+    border-left: 1px solid black;
+}
+
+.shopRow {
+    display: flex;
+    height: 45px
+}
+
+.shopLabel {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bsBox {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.shopBtn {
+    border: none;
+    background: none;
+}
+
+.bsRow {
+    display: flex;
+    height: 12.5%;
+}
+
+.buybuy {
+    background: rgba(20,120,20,.2);
+    color: rgba(0,80,0,1);
+}
+
+#buyMode.buysell {
+    background: rgba(100,100,100,.3);
+    color: rgba(20,180,20,.5);
+    border-bottom: 2px solid black;
+}
+
+#sellMode.sellbuy {
+    background: rgba(100,100,100,.3);
+    color: rgba(180,20,20,.5);
+    border-bottom: 2px solid black;
+}
+
+.sellsell {
+    background: rgba(180,20,20,.2);
+    color: rgba(80,0,0,1);
+}
+
+.buy {
+    background: rgba(20,120,20,.05);
+}
+
+.sell {
+    background: rgba(180,20,20,.05);
+}
+
+#tradeValue {
+    border: 6px solid lavender;
+    width: 40%;
+    height: 100%; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    font-size: 22px; 
+    box-sizing: border-box; 
+}
+
+#tradeValue.buy {
+    background: rgba(20,120,20,.2);
+}
+
+#tradeValue.sell {
+    background: rgba(180,20,20,.2);
+}
+
+/*///////////////////////CONTENT BOX STYLING//////////////////////////*/
+
+.contentBtn {
+    padding-top: 2rem;
+}
+
+.contentBtn1 {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    padding: 1rem; 
+    border-right: 1px solid black
+}
+
+.contentBtn2 {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    padding: 1rem; 
+}
+
+/*//////////////////PROJECT STYLING/////////////////////*/
+
+#newProjBtn {
+    border-radius: .5rem;
+}
+
+#projectBox {
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    margin: 0rem 1rem 1rem 1rem;
+    height: 82%;
+    border-radius: 1rem;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    background: rgba(211,211,211,.3)
+}
+
+#projectBox::-webkit-scrollbar {
+    display: none;
+}
+
+.eventRow {
+    padding: .5rem 1rem;
+    margin: .5rem 1rem;
+    border-radius: 1rem;
+    display: flex;
+    align-items: start;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    border: 1px solid rgba(230,160,100,1);
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    background: aliceblue;
+}
+
+.expandBtn {
+    background: none;
+    border: none;
+}
+
+.durationBox {
+    display: flex;
+    gap: 1rem;
+    align-items: start;
+    justify-content: start;
+}
+
+.workerBox {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+
+.changeWorkerBtn {
+    background: none;
+    border: none;
+}
+
+.eventImpactBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.endBtn {
+    border: none;
+    background: none;
+}
+
+.descBox {
+    display: block;
+}
+
+.descBox.hidden {
+    display: none;
+}
+
+/*///////////////NEW EVENT STYLING///////////////////*/
+
+.newEventHalfRow {
+    width: calc(50% - 4rem);
+    margin-left: 5rem;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+}
+
+.newEventHalfRow2 {
+    width: calc(50% - 4rem);
+    margin-left: 2rem;
+    display: flex;
+
+    
+}
+
+/*//////////////////////////BLDG STYLING///////////////////////*/
+
+.fail {
+    color: red;
+}
+
+
+/*///////////////////////UPGRADE STYLING///////////////////////*/
+.upgBtn {
+    border-radius: 1rem;
+    padding: .5rem 1rem;
+}
+
+/*//////////////////// WEEK STYLING/////////////////*/
+#log>div {
+    width: 100%
+}
+
+.eventStartRow {
+        padding: .5rem 1rem;
+        border-radius: 1rem;
+        margin-right: 1rem;
+        margin-left: 1rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        width: calc(100% -2rem);
+        box-sizing: border-box;
+        border: 1px solid rgba(100,100,130,1);
+        align-items: start;
+        justify-content: start;
+        padding-top: 1.25rem;
+        padding-bottom: 1.25rem;
+        background: aliceblue;
+        margin-bottom: 1rem;
+    }
+
+
+    /*/////////////TROOP STYLING ///////////////*/
+
+.troopDisplayBox {
+    background-size: contain ;
+    background-repeat: no-repeat;
+    overflow: scroll;
+    height: 1000px;
+    scrollbar-width: none;
+    position: relative;
+    margin: 1rem;
+}
+
+#militiaInfantry {
+    background-image: url('./militia_infantry-1706207528.png');
+
+}
+
+#militiaArchers {
+    background-image: url('./militia_archers-1706210077.png');
+
+}
+
+#militiaPikemen {
+    background-image: url('./militia_pikemen-1706216953.png');
+
+}
+
+#militiaCavalry {
+    background-image: url('./militia_cavalry-1706216960.png');
+
+}
+
+#guardInfantry {
+    background-image: url('./guard_infantry-1706642232.png')
+}
+
+#guardArchers {
+    background-image: url('./guard_archers-1706643899.png')
+}
+
+#guardSpearmen {
+    background-image: url('./guard_spearmen-1706642492.png');
+}
+
+#guardCavalry {
+    background-image: url('./guard_cavalry-1706642216.png')
+}
+
+#soldiers {
+    background-image: url('./soldiers-1706642896.png');
+}
+
+#longbowmen {
+    background-image: url('./longbowmen-1706643607.png');
+}
+
+/*/////////////////GLOSSARY STYLING///////////////*/
+#glossary {
+    position: absolute;
+    z-index: 1;
+    top: 2rem;
+    left: 3rem;
+    height: 72.5rem;
+    width: 50rem;
+    background-color: aliceblue;
+    border-radius: .5rem;
+    box-shadow: 0 0 2rem black;
+   
+}
+
+.troopRow {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr;
+    place-items: center;
+    margin-bottom: 1rem;
+}
+
+/*/////////////////RATING BOX////////////////*/
+.rateRow {
+    display: grid;
+    grid-template-columns: 1.6fr .75fr 3fr;
+    margin-top: 1rem;
+    padding-left: 1rem;
+}
+
+
+.intelOff {
+    background-image: url('./sword-cross.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+
+.intelDef {
+        background-image: url('./shield.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        position: relative;
+    }
+
+
+    /*//////////////TOOLTIP STYLING///////////////////////*/
+    .tooltip {
+        position: relative;
+        display: inline-block;
+        
+      }
+      
+      /* Tooltip text */
+      .tooltip .tooltiptext {
+        visibility: hidden;
+        width: 200px;
+        background-color: black;
+        color: #fff;
+        text-align: center;
+        padding: 5px 0;
+        border-radius: 6px;
+       
+        /* Position the tooltip text - see examples below! */
+        position: absolute;
+        z-index: 1;
+      }
+      
+      /* Show the tooltip text when you mouse over the tooltip container */
+      .tooltip:hover .tooltiptext {
+        visibility: visible;
+        top: 18px;
+        right: 105%;
+        transition-delay: .33s;
+      }

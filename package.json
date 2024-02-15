@@ -1,0 +1,27 @@
+{
+  "name": "settlement-sheet",
+  "version": "0.1.0",
+  "description": "A 2.0 version of the settlement sheet (starting from scratch with lessons learned!)",
+  "main": "./src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "webpack --watch",
+    "start": "webpack serve --open",
+    "build": "webpack",
+    "publish": "git subtree push --prefix dist origin gh-pages"
+  },
+  "keywords": [],
+  "author": "RobbiePottsDM",
+  "license": "ISC",
+  "devDependencies": {
+    "css-loader": "^6.9.0",
+    "favicons": "^7.1.5",
+    "favicons-webpack-plugin": "^6.0.1",
+    "html-loader": "^4.2.0",
+    "html-webpack-plugin": "^5.6.0",
+    "style-loader": "^3.3.4",
+    "webpack": "^5.89.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1"
+  }
+}
